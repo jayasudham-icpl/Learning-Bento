@@ -9,4 +9,5 @@ pipeline:
         root.last_name = this.names.index(-1).hash("sha256").encode("base64")
 
 output:
-  stdout: {}
+  file:
+    path: /home/jayasudha/Desktop/learning-bento/output.txt
