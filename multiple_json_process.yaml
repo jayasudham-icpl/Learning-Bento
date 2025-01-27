@@ -1,0 +1,14 @@
+input:
+  file:
+    paths:
+      - /home/jayasudha/Desktop/learning-bento/input1.json
+      - /home/jayasudha/Desktop/learning-bento/input2.json
+      - /home/jayasudha/Desktop/learning-bento/input3.json
+pipeline:
+  processors:
+    - mapping: |
+        root = content().uppercase()
+
+output:
+  file:
+    path: /home/jayasudha/Desktop/learning-bento/output.json
