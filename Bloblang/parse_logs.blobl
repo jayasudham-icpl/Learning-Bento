@@ -1,0 +1,6 @@
+root = {
+  "timestamp": this.re_replace("^((\\w+\\s+\\d+\\s+\\d+:\\d+:\\d+)).*", "$1"),
+  "hostname":  this.re_replace("^\\w+\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+(\\S+).*", "$1"),
+  "level":     this.re_replace("^\\w+\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\S+\\s+(\\S+).*", "$1"),
+  "message":   this.re_replace("^\\w+\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\S+\\s+\\S+\\s+(.*)", "$1")
+}
